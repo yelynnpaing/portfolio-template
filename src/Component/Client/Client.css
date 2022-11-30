@@ -1,0 +1,147 @@
+.client{
+    display: flex;
+    height: 60vh;
+    margin-top: 7rem;
+    padding: 0 3rem 0 1rem;
+    position: relative;
+}
+.cl-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cl-texts{
+    display: flex;
+    flex-direction: column;
+}
+.cl-texts > :nth-child(1){
+    font-size: 50px;
+    color: var(--darkBlue);
+    font-weight: bold;
+}
+.cl-texts > :nth-child(2){
+    font-size: 50px;
+    color: var(--gold);
+    font-weight: bold;
+}
+.cl-texts > :nth-child(3){
+    color: var(--gray);
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+.cl-btn{
+    font-weight: bold;
+    background: var(--darkBlue);
+    border: none;
+    margin-top: 1.5rem;
+}
+.cl-btn:hover{
+    background: #fff;
+    border: 2px solid var(--darkBlue);
+    color: var(--darkBlue);
+}
+.cl-right{
+    position: relative;
+}
+.bg-cricle{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 100%;
+    z-index: 0;
+}
+.c-one{
+    position: absolute;
+    background: var(--darkBlue);
+    left: 25rem;
+    top: 0rem;
+}
+.c-two{
+    position: absolute;
+    background: var(--blueViolet);
+    left: 25rem;
+    top: 8rem;
+}
+.circle-wrapper{
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    background: #Fff;
+    border-radius: 100%;
+    left: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.small-circle{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-wrapper > :nth-child(1){
+    left: 6rem;
+    top: 6rem;
+    background: #fff;
+}
+.circle-wrapper > :nth-child(2){
+    left: -3rem;
+    top: 6rem;
+    background: #fff;
+}
+.circle-wrapper > :nth-child(3){
+    left: 14.5rem;
+    top: 6rem;
+    background: #fff;
+}
+.circle-wrapper > :nth-child(4){
+    left: 7rem;
+    top: 15rem;
+    background: #fff;
+}
+.circle-wrapper > :nth-child(5){
+    left: 6rem;
+    top: -3rem;
+    background: #fff;
+}
+.small-circle > * {
+    transform: scale(0.6);
+}
+@media screen and (min-width:1920px){
+    .client{
+        padding-top: 3rem;
+    }
+    .cl-left{
+        padding-left: 7rem;
+    }
+    .cl-right{
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width:1366px) {
+    .client{
+        margin-bottom: 7rem;
+    }
+}
+@media screen and (max-width:480px){
+    .client{
+        height: auto;
+        margin-top: 2rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .cl-texts > :nth-of-type(1){
+        font-size: 35px;
+    }
+    .cl-texts > :nth-of-type(2){
+        font-size: 35px;
+    }
+    .cl-right{
+        left: -70%;
+        transform: scale(0.8);
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}

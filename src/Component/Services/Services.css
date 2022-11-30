@@ -1,0 +1,98 @@
+.services{
+    display: flex;
+    height: 80vh;
+    margin-top: 6rem;
+    padding: 0 3rem 0 3rem;
+}
+.s-left{
+    display: flex;
+    flex-direction: column;
+}
+.s-texts{
+    display: flex;
+    flex-direction: column;
+}
+.s-texts > :nth-child(1){
+    font-size: 50px;
+    color: var(--darkBlue);
+    font-weight: bold;
+}
+.s-texts > :nth-child(2){
+    font-size: 50px;
+    color: var(--gold);
+    font-weight: bold;
+}
+.s-texts > :nth-child(3){
+    color: var(--gray);
+    margin-top: 1rem;
+}
+.s-btn{
+    width: 160px;
+    font-weight: bold;
+    background: var(--darkBlue);
+    border: none;
+    margin-top: 6rem;
+}
+.s-btn:hover{
+    background: #fff;
+    border: 2px solid var(--darkBlue);
+    color: var(--darkBlue);
+}
+.cards{
+    position: relative;
+ }
+.cards > * {
+    position: absolute;
+}
+@media screen and (min-width:1920px){
+    .s-left{
+        padding-left: 4rem;
+    }
+    .cards{
+        margin-left: 8rem;
+    }
+    .smb-br{
+        display: none;
+    }
+}
+@media screen and (max-width:1366px) {
+    .services{
+        margin-bottom: 7rem;
+    }
+    .smb-br{
+        display: none;
+    }
+}
+@media screen and (max-width:480px){
+    .services{
+        flex-direction: column;
+        padding: 0;
+        margin-top: 3rem;
+        margin-bottom: 40rem;
+    }
+    .s-texts > :nth-of-type(1){
+        font-size: 35px;
+    }
+    .s-texts > :nth-of-type(2){
+        font-size: 30px;
+    }
+    .s-br{
+        display: none;
+    }
+    .smb-br{
+        display: block;
+    }
+    .s-btn{
+        margin-top: 1.5rem;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 15rem;
+        margin-top: 4rem;
+
+    }
+    .cards > * {
+        position: static;
+    }
+}

@@ -1,0 +1,19 @@
+.toggle{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid var(--blueViolet);
+    border-radius: 1rem;
+    position: relative;
+    padding: 3px;
+    cursor: pointer;
+}
+.toggle > * {
+    width: 1rem;
+    height: 1rem;
+    color:var(--blueViolet);
+}
+.toggle-btn{
+    border-radius: 100%;
+    position: absolute;
+    background: var(--blueViolet);
+}

@@ -1,0 +1,85 @@
+
+.t-wrapper{
+    height: 80vh;
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 7rem;
+    position: relative;
+}
+.t-heading{
+    align-self: flex-start;
+}
+.t-heading > *{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.t-heading > :nth-of-type(2){
+    color: var(--gold);
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 30rem;
+    height: 12rem;
+    padding: 2rem;
+    border: 1px solid var(--orangeCard);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 30px;
+    background: #ffffff;
+}
+.testimonial > img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+.testimonial > span{
+    color: var(--gray);
+    text-align: center;
+}
+.t-wrapper .swiper{
+    width: 100%;
+    height: 70%;
+}
+.t-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t-wrapper .swiper-pagination-bullet-active{
+    background: var(--gold);
+}
+@media screen and (min-width:1920px){
+    .t-wrapper{
+        height: 70vh;
+    }
+}
+@media screen and (max-width:480px){
+    .t-wrapper{
+        height: 70vh;
+    }
+    .t-wrapper{
+        padding: 0;
+        margin-top: 0;
+        gap: 0;
+    }
+    .t-heading{
+        margin-bottom: -1rem;
+    }
+    .t-heading > * {
+        font-size: 30px;
+    }
+    .testimonial{
+        padding: 0.5rem;
+        width: 32rem;
+        height: 15rem;
+    }
+    .testimonial > span{
+        font-size: 16px;
+    }
+}
