@@ -26,31 +26,31 @@ const Intro = () => {
         <div className="i-left">
             <div className="i-icon-group">
                 <motion.div 
-                    initial = {{bottom: '-5%'}}
-                    whileInView = {{bottom: '5%'}}
+                    initial = {{bottom: '-10%'}}
+                    whileInView = {{bottom: '-5%'}}
                     transition = {transition}
-                    style={{position: "absolute" , right:'30%', bottom:'5%'}}>
+                    style={{position: "absolute" , right:'23%', bottom:'-5%'}}>
                         <FloatingDiv image={html5} />
                 </motion.div>
                 <motion.div 
-                    initial = {{right:'10%'}}
-                    whileInView = {{right:'25%'}}
+                    initial = {{right:'7%'}}
+                    whileInView = {{right:'12%'}}
                     transition = {transition}
                     style={{position:"absolute" , right:'25%', top:'25%'}}>
                         <FloatingDiv image= {css3} />
                 </motion.div>
                 <motion.div 
-                    initial = {{top:'-13%'}}
-                    whileInView = {{top:'-8%'}}
+                    initial = {{top:'-11%'}}
+                    whileInView = {{top:'-6%'}}
                     transition = {transition}
-                    style={{position:'absolute', left:'45%' , top:'-8%'}}>
+                    style={{position:'absolute', left:'45%' , top:'-6%'}}>
                         <FloatingDiv image = {javascript} />
                 </motion.div>
                 <motion.div 
-                    initial = {{left:'7%'}}
-                    whileInView = {{left:'12%'}}
+                    initial = {{left:'5%'}}
+                    whileInView = {{left:'10%'}}
                     transition = {transition}
-                    style={{position:'absolute' , left:'12%', top:'12%'}}> 
+                    style={{position:'absolute' , left:'10%', top:'12%'}}> 
                         <FloatingDiv image = {react} />
                 </motion.div>
             </div>
@@ -64,13 +64,12 @@ const Intro = () => {
                 >
                     Hello! I am
                 </span>
-                <span>Front End Dev</span>
-                <span
-                >Lorem ipsum dolor, sit amet consectetur adipisicing elitelit. Saepe, 
-                minus eum magnam excepturi sed odit a cumque fugiat,
-                enim! Quibusdam unde perferendis rerum reicien  
-                perferendis rerumreicie 
-                molestiaenatus a natus?
+                <span>Front End Dev...</span>
+                <span>
+                Lorem ipsum dolor,amet adipisicing elitelit. Saepe, minus eum magnam excepturi 
+                sed odit a cumque fugiat, enim! Quibusda unde perferendis rerum 
+                reicien perferendis rerumreicie natusreicien 
+                perferendis rerumreicie natus?
                 </span>
                 <button className='btn i-btn'>Hire Me</button>
             </div>

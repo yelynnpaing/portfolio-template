@@ -1,6 +1,6 @@
 .portfolio{
     height: 50vh;
-    margin-top: 3rem;
+    margin: 13rem 0 10rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,12 +8,12 @@
 }
 .portfolio span:nth-of-type(1){
     color: var(--black);
-    font-size: 45px;
-    font-weight:bold;
+    font-size: 50px;
+    font-weight:500;
 }
 .portfolio span:nth-of-type(2){
     color: var(--blueViolet);
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     margin-top: 0.5rem;
 }
@@ -34,7 +34,11 @@
     .portfolio{
         margin-top: 20rem;
     }
-    .portfolio > span {
+    .portfolio :nth-child(1) {
+        font-size: 40px !important;
+        font-weight: 500;
+    }
+    .portfolio :nth-child(2) {
         font-size: 35px !important;
     }
     .swiper-slide > img{

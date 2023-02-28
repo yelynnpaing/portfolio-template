@@ -27,9 +27,9 @@
   cursor: pointer;
   box-shadow:var(--boxShadow)
 }
-@media screen and (min-width:1367px){
+@media screen and (min-width:1367px) and (max-width:1920px){
   .App {
-    padding: 1rem 10rem;
+    padding: 1rem 5rem;
   }
 }
 @media screen and (max-width:480px) {

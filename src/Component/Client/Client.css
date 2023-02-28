@@ -1,7 +1,7 @@
 .client{
     display: flex;
     height: 60vh;
-    margin-top: 7rem;
+    margin: 3rem 0 8rem 0;
     padding: 0 3rem 0 1rem;
     position: relative;
 }
@@ -15,14 +15,14 @@
     flex-direction: column;
 }
 .cl-texts > :nth-child(1){
-    font-size: 50px;
+    font-size: 41px;
     color: var(--darkBlue);
     font-weight: bold;
 }
 .cl-texts > :nth-child(2){
     font-size: 50px;
     color: var(--gold);
-    font-weight: bold;
+    font-weight: 500;
 }
 .cl-texts > :nth-child(3){
     color: var(--gray);
@@ -133,10 +133,13 @@
         flex-direction: column;
     }
     .cl-texts > :nth-of-type(1){
-        font-size: 35px;
+        font-size: 33px;
     }
     .cl-texts > :nth-of-type(2){
-        font-size: 35px;
+        font-size: 40px;
+    }
+    .cl-texts > :nth-of-type(3){
+        font-size: 16px;
     }
     .cl-right{
         left: -70%;
